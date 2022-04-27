@@ -4,7 +4,7 @@
 #include <YSI_Coding\y_hooks>
 
 //#include <YSF> // include this for SA:MP version
-#include <ysfomp> //include this for omp version
+#include <ysfomp> //include this for OMP version
 
 hook OnPlayerConnect(playerid)
 {
