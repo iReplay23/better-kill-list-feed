@@ -1,4 +1,4 @@
-// MUCH THANKS TO IllidanS4 & kurta999 FOR YSF.inc, one of the best memory hacking plugin
+// MUCH THANKS TO IllidanS4 & kurta999 FOR YSF.inc, one of the best memory hacking plugins
 // written in 2020 December, (c) Y_Less, IllidanS4, iReplay & ionchyAdv
 
 #include <YSI_Coding\y_hooks>
