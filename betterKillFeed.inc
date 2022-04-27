@@ -41,8 +41,8 @@ stock SendDeathMessageToPlayerEx(playerid, killer, assister, killee, weapon)
 	return SetPlayerName(killer, returnKillerName);
 }
 
-forward stock SendDeathMessageEx(killer, killee, assister, weapon);
-stock SendDeathMessageEx(killer, killee, assister, weapon)
+forward stock SendDeathMessageEx(killer, assister, killee, weapon);
+stock SendDeathMessageEx(killer, assister, killee, weapon)
 {
 	new returnKillerName[MAX_PLAYER_NAME], returnAssisterName[MAX_PLAYER_NAME],
 		feedText[MAX_PLAYER_NAME];
@@ -59,5 +59,5 @@ stock SendDeathMessageEx(killer, killee, assister, weapon)
 
 /*
 	SendDeathMessageToPlayerEx(playerid, killer, assister, killee, weapon)
-	SendDeathMessageEx(killer, killee, assister, weapon)
+	SendDeathMessageEx(killer, assister, killee, weapon)
 */
