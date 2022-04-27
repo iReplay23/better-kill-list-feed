@@ -2,7 +2,7 @@
 This include will let you show 2 players in kill list feed. (could be helpful in some cases, based on YSF plugin).
 
 ### Installation
-Include as is written below and if you did everything right it should be Plug & Play:
+Include it like it's shown below and if you did everything right it should be Plug & Play
 ```pawn
 #include <betterKillFeed.inc>
 ```
