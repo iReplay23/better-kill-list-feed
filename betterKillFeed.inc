@@ -15,10 +15,10 @@ hook OnGameModeInit()
 
 hook OnPlayerConnect(playerid)
 {
-	new playerName[MAX_PLAYER_NAME], ichar = -1;
+	new playerName[MAX_PLAYER_NAME];
 	GetPlayerName(playerid, playerName, sizeof playerName);
 
-	for(;playerName[++ ichar];)
+	for(new ichar; ichar <= strlen(playerName); ichar++)
 	{
 		if(playerName[ichar] == ' ' || playerName[ichar] == '+')
 		{
@@ -45,8 +45,8 @@ stock SendDeathMessageToPlayerEx(playerid, killer, assister, killee, weapon)
 	return SetPlayerName(killer, returnKillerName);
 }
 
-forward stock SendDeathMessageEx(killer, assister, killee, weapon);
-stock SendDeathMessageEx(killer, assister, killee, weapon)
+forward stock SendDeathMessageEx(killer, killee, assister, weapon);
+stock SendDeathMessageEx(killer, killee, assister, weapon)
 {
 	new returnKillerName[MAX_PLAYER_NAME], returnAssisterName[MAX_PLAYER_NAME],
 		feedText[MAX_PLAYER_NAME];
@@ -63,5 +63,5 @@ stock SendDeathMessageEx(killer, assister, killee, weapon)
 
 /*
 	SendDeathMessageToPlayerEx(playerid, killer, assister, killee, weapon)
-	SendDeathMessageEx(killer, assister, killee, weapon)
+	SendDeathMessageEx(killer, killee, assister, weapon)
 */
