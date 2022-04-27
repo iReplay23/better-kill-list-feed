@@ -6,11 +6,15 @@
 //#include <YSF> // include this for SA:MP version
 #include <ysfomp> //include this for OMP version
 
-hook OnPlayerConnect(playerid)
+hook OnGameModeInit()
 {
 	AllowNickNameCharacter('+', true);
 	AllowNickNameCharacter(' ', true);
+	return Y_HOOKS_CONTINUE_RETURN_1;
+}
 
+hook OnPlayerConnect(playerid)
+{
 	new playerName[MAX_PLAYER_NAME], ichar = -1;
 	GetPlayerName(playerid, playerName, sizeof playerName);
 
